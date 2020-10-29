@@ -1,4 +1,33 @@
-#navbar {
+.title h1 {
+    color: white;
+    margin-left: 16px;
+}
+
+.nav-buttons a {
+    color: white;
+    font-size: 18px;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.create-page {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pokemon-form {
+    border: 1px;
+    padding: 20px;
+    /* width: 35%; */
+    width: 50%;
+}
+
+.form-row {
+    margin-bottom: 16px;
+}
+
+.navbar {
     background-color: #BF4141;
     border-bottom: 15px solid black;
     display: flex;
