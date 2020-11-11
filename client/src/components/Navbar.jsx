@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import '../pages/style.css';
 
 let Navbar = () => {
   return (
@@ -8,8 +8,8 @@ let Navbar = () => {
         <h1>Pokemon Generator</h1>
       </div>
       <div className="nav-buttons">
-        <a href="/createPokemon.html">Create New Pokemon</a>
-        <a href="/viewPokemon.html">View All Pokemon</a>
+        <a href="/create">Create New Pokemon</a>
+        <a href="/view">View All Pokemon</a>
       </div>
     </div>
   );

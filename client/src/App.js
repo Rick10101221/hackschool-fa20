@@ -1,27 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-import './pages/CreatePokemon.jsx';
-import CreatePokemon from './pages/CreatePokemon.jsx';
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
+import CreatePokemon from './pages/CreatePokemon';
+import ViewPokemon from './pages/ViewPokemon';
 
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-    <CreatePokemon/>
+    <Router>
+      <Switch>
+        <Redirect from='/' to='/create' exact />
+        <Route exact path='/create' component={CreatePokemon} />
+        <Route exact path='/view' component={ViewPokemon} />
+      </Switch>
+    </Router>
   );
 }
 

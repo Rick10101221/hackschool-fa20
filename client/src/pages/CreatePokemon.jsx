@@ -1,7 +1,7 @@
 import '../components/Navbar.jsx';
 import Navbar from '../components/Navbar.jsx';
 import Type from '../components/Type.jsx';
-import '../components/style.css';
+import './style.css';
 
 const CreatePokemon = () => {
   return (
