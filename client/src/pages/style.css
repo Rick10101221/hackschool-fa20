@@ -16,15 +16,18 @@
   align-items: center;
 }
 
-.pokemon-form {
-  border: 1px;
-  padding: 20px;
-  /* width: 35%; */
-  width: 50%;
-}
-
 .form-row {
   margin-bottom: 16px;
+}
+
+.pokemon-form {
+  border: 1px solid black;
+  padding: 20px;
+  width: 35%;
+}
+
+label {
+  margin: 5px;
 }
 
 .navbar {
@@ -34,4 +37,26 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
+}
+
+.canvas {
+  border: 1px solid black;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+}
+
+.canvas-options {
+  display: flex;
+  justify-content: center;
+}
+
+.canvas-options button {
+  margin: 5px;
+}
+
+.color-picker {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
 }

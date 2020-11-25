@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import API from '../API';
-import PokemonCard from './PokemonCard/PokemonCard';
+import PokemonCard from '../components/PokemonCard/PokemonCard';
 import './style.css';
 
 const ViewPokemon = () => {
@@ -32,7 +32,7 @@ const ViewPokemon = () => {
     return (
         <div>
           <Navbar />
-          <button onClick={logPokemon}>Log Pokemon</button>
+          {/* <button onClick={logPokemon}>Log Pokemon</button> */}
           <div className="pokemon">
             {currentPokemon}
           </div>
