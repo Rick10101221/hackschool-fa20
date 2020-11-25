@@ -25,10 +25,6 @@ const ViewPokemon = () => {
       />
     );
 
-    const logPokemon = async () => {
-      console.log(body);
-    }
-
     return (
         <div>
           <Navbar />
